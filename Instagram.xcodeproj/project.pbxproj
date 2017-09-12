@@ -11,8 +11,8 @@
 		604387EA1F667B7700CB765A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604387E91F667B7700CB765A /* AppDelegate.swift */; };
 		604387EC1F667B7700CB765A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604387EB1F667B7700CB765A /* ViewController.swift */; };
 		604387EF1F667B7700CB765A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604387ED1F667B7700CB765A /* Main.storyboard */; };
-		604387F11F667B7700CB765A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604387F01F667B7700CB765A /* Assets.xcassets */; };
 		604387F41F667B7700CB765A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604387F21F667B7700CB765A /* LaunchScreen.storyboard */; };
+		605397781F6773FB00B2444C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605397771F6773FB00B2444C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +22,9 @@
 		604387E91F667B7700CB765A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		604387EB1F667B7700CB765A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		604387EE1F667B7700CB765A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		604387F01F667B7700CB765A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		604387F31F667B7700CB765A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604387F51F667B7700CB765A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605397771F6773FB00B2444C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE6A68F3D23427E5C24E3073 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,9 +64,9 @@
 				604387E91F667B7700CB765A /* AppDelegate.swift */,
 				604387EB1F667B7700CB765A /* ViewController.swift */,
 				604387ED1F667B7700CB765A /* Main.storyboard */,
-				604387F01F667B7700CB765A /* Assets.xcassets */,
 				604387F21F667B7700CB765A /* LaunchScreen.storyboard */,
 				604387F51F667B7700CB765A /* Info.plist */,
+				605397771F6773FB00B2444C /* Assets.xcassets */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -123,6 +123,7 @@
 				TargetAttributes = {
 					604387E51F667B7700CB765A = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JMF59J5MN8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				604387F41F667B7700CB765A /* LaunchScreen.storyboard in Resources */,
-				604387F11F667B7700CB765A /* Assets.xcassets in Resources */,
+				605397781F6773FB00B2444C /* Assets.xcassets in Resources */,
 				604387EF1F667B7700CB765A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,10 +351,14 @@
 			baseConfigurationReference = CE6A68F3D23427E5C24E3073 /* Pods-Instagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JMF59J5MN8;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abc.Instagram;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.Instagram.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -363,10 +368,14 @@
 			baseConfigurationReference = 1E841D13F20E988F26E1E98F /* Pods-Instagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JMF59J5MN8;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abc.Instagram;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.Instagram.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -390,6 +399,7 @@
 				604387FA1F667B7700CB765A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
