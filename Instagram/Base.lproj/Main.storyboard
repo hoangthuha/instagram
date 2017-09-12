@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0wM-qb-T9B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cMq-67-26K">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -223,7 +223,7 @@
             </objects>
             <point key="canvasLocation" x="1212" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Search-->
         <scene sceneID="dNd-ER-Gdi">
             <objects>
                 <viewController title="Search" id="ld8-u0-KhI" sceneMemberID="viewController">
@@ -242,7 +242,7 @@
             </objects>
             <point key="canvasLocation" x="1038" y="1003"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera-->
         <scene sceneID="foy-6c-Az4">
             <objects>
                 <viewController title="Camera" id="xE3-fb-OeQ" sceneMemberID="viewController">
@@ -261,7 +261,7 @@
             </objects>
             <point key="canvasLocation" x="1700" y="1003"/>
         </scene>
-        <!--View Controller-->
+        <!--Like-->
         <scene sceneID="H0q-2z-eIO">
             <objects>
                 <viewController title="Like" id="y0x-J5-dBT" sceneMemberID="viewController">
@@ -280,7 +280,7 @@
             </objects>
             <point key="canvasLocation" x="2374" y="1003"/>
         </scene>
-        <!--View Controller-->
+        <!--Account-->
         <scene sceneID="hnI-dt-zfI">
             <objects>
                 <viewController title="Account" id="Lu3-Yz-uTf" sceneMemberID="viewController">
