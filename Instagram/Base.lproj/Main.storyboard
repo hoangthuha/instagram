@@ -76,9 +76,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" title="Sign up."/>
-                                        <connections>
-                                            <segue destination="Gu9-sX-TJV" kind="show" id="6ib-DG-loP"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -118,7 +115,7 @@
         <!--Signup View Controller-->
         <scene sceneID="YUm-tB-WL5">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Gu9-sX-TJV" customClass="SignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewController" id="Gu9-sX-TJV" customClass="SignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z0S-Ug-9ok"/>
                         <viewControllerLayoutGuide type="bottom" id="V5y-7Q-EDm"/>
@@ -189,9 +186,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" title="Sign In."/>
-                                        <connections>
-                                            <segue destination="cMq-67-26K" kind="show" id="PXG-BE-pcn"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
