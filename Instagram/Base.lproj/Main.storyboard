@@ -77,6 +77,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" title="Sign up."/>
+                                        <connections>
+                                            <segue destination="Gu9-sX-TJV" kind="show" id="Ryd-G1-VwC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,6 +190,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" title="Sign In."/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="eOc-lZ-ohL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -319,7 +325,7 @@
                                         <rect key="frame" x="0.0" y="28" width="323" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bl-4H-nTd" id="Iqn-4s-cg0">
-                                            <rect key="frame" x="0.0" y="0.0" width="323" height="189.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-WH-2IG">
@@ -412,4 +418,7 @@
         <image name="plus" width="64" height="64"/>
         <image name="search" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eOc-lZ-ohL"/>
+    </inferredMetricsTieBreakers>
 </document>
