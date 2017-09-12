@@ -13,6 +13,9 @@
 		604387EF1F667B7700CB765A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604387ED1F667B7700CB765A /* Main.storyboard */; };
 		604387F41F667B7700CB765A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604387F21F667B7700CB765A /* LaunchScreen.storyboard */; };
 		605397781F6773FB00B2444C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605397771F6773FB00B2444C /* Assets.xcassets */; };
+		6053977A1F6777B900B2444C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605397791F6777B900B2444C /* LoginViewController.swift */; };
+		6053977C1F6777C900B2444C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6053977B1F6777C900B2444C /* SignupViewController.swift */; };
+		6053977E1F67813700B2444C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6053977D1F67813700B2444C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		604387F31F667B7700CB765A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604387F51F667B7700CB765A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		605397771F6773FB00B2444C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		605397791F6777B900B2444C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6053977B1F6777C900B2444C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		6053977D1F67813700B2444C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE6A68F3D23427E5C24E3073 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,8 +70,11 @@
 				604387E91F667B7700CB765A /* AppDelegate.swift */,
 				604387EB1F667B7700CB765A /* ViewController.swift */,
 				604387ED1F667B7700CB765A /* Main.storyboard */,
+				605397791F6777B900B2444C /* LoginViewController.swift */,
+				6053977B1F6777C900B2444C /* SignupViewController.swift */,
 				604387F21F667B7700CB765A /* LaunchScreen.storyboard */,
 				604387F51F667B7700CB765A /* Info.plist */,
+				6053977D1F67813700B2444C /* GoogleService-Info.plist */,
 				605397771F6773FB00B2444C /* Assets.xcassets */,
 			);
 			path = Instagram;
@@ -152,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				604387F41F667B7700CB765A /* LaunchScreen.storyboard in Resources */,
+				6053977E1F67813700B2444C /* GoogleService-Info.plist in Resources */,
 				605397781F6773FB00B2444C /* Assets.xcassets in Resources */,
 				604387EF1F667B7700CB765A /* Main.storyboard in Resources */,
 			);
@@ -224,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6053977A1F6777B900B2444C /* LoginViewController.swift in Sources */,
 				604387EC1F667B7700CB765A /* ViewController.swift in Sources */,
+				6053977C1F6777C900B2444C /* SignupViewController.swift in Sources */,
 				604387EA1F667B7700CB765A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
