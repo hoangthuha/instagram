@@ -674,9 +674,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Home Icon-40" id="HTK-f5-XrN"/>
-                    <connections>
-                        <outlet property="tableview" destination="Scz-A3-VwQ" id="8y2-vg-B2F"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5Z-Sc-0gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

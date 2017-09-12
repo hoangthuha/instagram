@@ -8,33 +8,14 @@
 
 import UIKit
 import Firebase
-import FirebaseDatabase
-import FirebaseAuth
 
-class feedViewController:  UITableViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    
-    //UISearchResultsUpdating 
-    
-    
-    
-    
-    
-    
-    
-    
-
-    override func viewDidLoad() {
+class feedViewController: UIViewController {
+      override func viewDidLoad() {
         super.viewDidLoad()
 
-  
-    }
-
+}
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
-    
-
-
 
 }
 
