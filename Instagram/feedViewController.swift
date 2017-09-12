@@ -11,7 +11,9 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
-class feedViewController: UIViewController, UITableViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UISearchResultsUpdating {
+class feedViewController:  UITableViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    
+    //UISearchResultsUpdating 
     
     
     
@@ -33,5 +35,7 @@ class feedViewController: UIViewController, UITableViewController,UIImagePickerC
     
 
 
+
+}
 
 }
