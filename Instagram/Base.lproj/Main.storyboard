@@ -312,7 +312,7 @@
         <!--Home-->
         <scene sceneID="1ox-HK-QDw">
             <objects>
-                <viewController storyboardIdentifier="ViewController" title="Home" id="FB3-AW-n2O" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feedViewController" title="Home" id="FB3-AW-n2O" customClass="feedViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VKq-y3-oOW"/>
                         <viewControllerLayoutGuide type="bottom" id="2OP-CB-Xm5"/>

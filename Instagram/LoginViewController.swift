@@ -45,14 +45,18 @@ class LoginViewController: UIViewController {
 //        view.addSubview(loginButton)
         
         //check if the user has login
-        if Auth.auth().currentUser != nil {
-            guard let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? UINavigationController else {return}
-            
-            //  skip login page  / go to homepage
-            present(vc, animated: true, completion: nil)
-    
-
-        }
+        
+        
+//        if Auth.auth().currentUser != nil {
+//            guard let vc = storyboard?.instantiateViewController(withIdentifier: "feedViewController") as? feedViewController else {return}
+//            
+//            //  skip login page  / go to homepage
+//            present(vc, animated: true, completion: nil)
+//    
+//
+//            
+//        }
+        
     }
 
     func getFBUserData(){
@@ -66,7 +70,17 @@ class LoginViewController: UIViewController {
             })
         }
     }
-    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        if ((error) != nil) {
+            // Process error
+        }
+        else if result.isCancelled {
+            // Handle cancellations
+        }
+        else {
+            // Navigate to other view
+        }
+    }
     func loginUser() {
         guard let email = emailTextField.text else {return}
         
@@ -88,7 +102,7 @@ class LoginViewController: UIViewController {
             }
             
             if let validUser = user {
-                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController") as? UINavigationController else {return}
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "feedViewController") as? feedViewController else {return}
                 print(validUser)
                 
                 self.present(vc, animated: true, completion: nil)
