@@ -93,6 +93,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Log In With Facebook"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnO-7c-eiq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="umz-Kx-Wz3">
                                 <rect key="frame" x="46" y="313" width="283" height="40"/>
@@ -107,6 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kBS-US-CCr"/>
                     <connections>
+                        <outlet property="buttonPressedtwo" destination="DbM-OY-C7t" id="0CS-CP-ifD"/>
                         <outlet property="emailTextField" destination="1jN-Dd-1FJ" id="IB2-d6-dtn"/>
                         <outlet property="loginButton" destination="0ih-sm-Qe9" id="yBn-Wh-4bg"/>
                         <outlet property="passwordTextField" destination="umz-Kx-Wz3" id="GAc-Lj-unY"/>
@@ -308,7 +312,7 @@
         <!--Home-->
         <scene sceneID="1ox-HK-QDw">
             <objects>
-                <viewController title="Home" id="FB3-AW-n2O" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Home" id="FB3-AW-n2O" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VKq-y3-oOW"/>
                         <viewControllerLayoutGuide type="bottom" id="2OP-CB-Xm5"/>
@@ -325,7 +329,7 @@
                                         <rect key="frame" x="0.0" y="28" width="323" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bl-4H-nTd" id="Iqn-4s-cg0">
-                                            <rect key="frame" x="0.0" y="0.0" width="323" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="189.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-WH-2IG">
@@ -419,6 +423,6 @@
         <image name="search" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eOc-lZ-ohL"/>
+        <segue reference="Laf-cY-v1Q"/>
     </inferredMetricsTieBreakers>
 </document>
