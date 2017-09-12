@@ -16,6 +16,9 @@
 		6053977A1F6777B900B2444C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605397791F6777B900B2444C /* LoginViewController.swift */; };
 		6053977C1F6777C900B2444C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6053977B1F6777C900B2444C /* SignupViewController.swift */; };
 		60B50CCA1F678DCA00E94E80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60B50CC91F678DCA00E94E80 /* GoogleService-Info.plist */; };
+		60B50D021F67E17600E94E80 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B50D011F67E17600E94E80 /* AccountViewController.swift */; };
+		60B50D041F67E18D00E94E80 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B50D031F67E18D00E94E80 /* EditViewController.swift */; };
+		FD51BE8C1F67D3C400BB8BC6 /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51BE8B1F67D3C400BB8BC6 /* feedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +34,10 @@
 		605397791F6777B900B2444C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6053977B1F6777C900B2444C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		60B50CC91F678DCA00E94E80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60B50D011F67E17600E94E80 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		60B50D031F67E18D00E94E80 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		CE6A68F3D23427E5C24E3073 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
+		FD51BE8B1F67D3C400BB8BC6 /* feedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +75,10 @@
 			children = (
 				604387E91F667B7700CB765A /* AppDelegate.swift */,
 				604387EB1F667B7700CB765A /* ViewController.swift */,
+				FD51BE8B1F67D3C400BB8BC6 /* feedViewController.swift */,
 				604387ED1F667B7700CB765A /* Main.storyboard */,
+				60B50D011F67E17600E94E80 /* AccountViewController.swift */,
+				60B50D031F67E18D00E94E80 /* EditViewController.swift */,
 				605397791F6777B900B2444C /* LoginViewController.swift */,
 				6053977B1F6777C900B2444C /* SignupViewController.swift */,
 				604387F21F667B7700CB765A /* LaunchScreen.storyboard */,
@@ -195,6 +204,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Instagram/Pods-Instagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -202,6 +218,13 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -234,10 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD51BE8C1F67D3C400BB8BC6 /* feedViewController.swift in Sources */,
 				6053977A1F6777B900B2444C /* LoginViewController.swift in Sources */,
+				60B50D021F67E17600E94E80 /* AccountViewController.swift in Sources */,
 				604387EC1F667B7700CB765A /* ViewController.swift in Sources */,
 				6053977C1F6777C900B2444C /* SignupViewController.swift in Sources */,
 				604387EA1F667B7700CB765A /* AppDelegate.swift in Sources */,
+				60B50D041F67E18D00E94E80 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
