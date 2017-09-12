@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0wM-qb-T9B">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -209,7 +210,7 @@
             </objects>
             <point key="canvasLocation" x="273" y="139"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="dNd-ER-Gdi">
             <objects>
                 <viewController id="ld8-u0-KhI" sceneMemberID="viewController">
@@ -222,13 +223,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="8kh-qh-WpZ"/>
+                    <tabBarItem key="tabBarItem" title="" image="search" id="8kh-qh-WpZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3S-Vw-Uax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1038" y="1003"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="foy-6c-Az4">
             <objects>
                 <viewController id="xE3-fb-OeQ" sceneMemberID="viewController">
@@ -241,13 +242,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="iXC-99-xl9"/>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="plus" id="iXC-99-xl9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQ4-ML-cgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1700" y="1003"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="H0q-2z-eIO">
             <objects>
                 <viewController id="y0x-J5-dBT" sceneMemberID="viewController">
@@ -260,13 +261,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="N1X-xa-Wci"/>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="heart" id="N1X-xa-Wci"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOt-ib-mv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2374" y="1003"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="hnI-dt-zfI">
             <objects>
                 <viewController id="Lu3-Yz-uTf" sceneMemberID="viewController">
@@ -279,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7JT-O2-O6i"/>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="account" id="7JT-O2-O6i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7r-OD-Sye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -296,7 +297,49 @@
                     <view key="view" contentMode="scaleToFill" id="018-23-rsb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="190" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Scz-A3-VwQ">
+                                <rect key="frame" x="26" y="35" width="323" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="2bl-4H-nTd">
+                                        <rect key="frame" x="0.0" y="28" width="323" height="190"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bl-4H-nTd" id="Iqn-4s-cg0">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="189.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-WH-2IG">
+                                                    <rect key="frame" x="8" y="8" width="307" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeT-Cl-aAT">
+                                                    <rect key="frame" x="8" y="144" width="29" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgV-mf-hwz">
+                                                    <rect key="frame" x="45" y="144" width="35" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Scz-A3-VwQ" secondAttribute="trailing" constant="10" id="316-Hb-7mE"/>
+                            <constraint firstItem="Scz-A3-VwQ" firstAttribute="leading" secondItem="018-23-rsb" secondAttribute="leadingMargin" constant="10" id="cev-qo-JfW"/>
+                            <constraint firstItem="2OP-CB-Xm5" firstAttribute="top" secondItem="Scz-A3-VwQ" secondAttribute="bottom" constant="15" id="y0t-5H-8kf"/>
+                            <constraint firstItem="Scz-A3-VwQ" firstAttribute="top" secondItem="VKq-y3-oOW" secondAttribute="bottom" constant="15" id="zRg-Tg-uRT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" selectedImage="home" id="HTK-f5-XrN">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
@@ -304,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5Z-Sc-0gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="1003"/>
+            <point key="canvasLocation" x="200.80000000000001" y="1002.5487256371815"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KL4-k5-wNC">
@@ -329,9 +372,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="account" width="64" height="64"/>
         <image name="backgroundLogin" width="851" height="315"/>
         <image name="fb" width="48" height="48"/>
+        <image name="heart" width="50" height="50"/>
         <image name="home" width="64" height="64"/>
         <image name="logo" width="1200" height="429"/>
+        <image name="plus" width="64" height="64"/>
+        <image name="search" width="50" height="50"/>
     </resources>
 </document>
