@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cMq-67-26K">
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lu3-Yz-uTf">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0wM-qb-T9B">
+>>>>>>> 9766cfaa0e3abcde41826c2ef4677678748200af
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -352,7 +356,7 @@
         <!--Account-->
         <scene sceneID="hnI-dt-zfI">
             <objects>
-                <viewController storyboardIdentifier="AccountViewController" title="Account" id="Lu3-Yz-uTf" customClass="AccountViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Account" id="Lu3-Yz-uTf" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Thq-6H-T0E"/>
                         <viewControllerLayoutGuide type="bottom" id="YkW-d5-FiW"/>
@@ -361,7 +365,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Account-45" translatesAutoresizingMaskIntoConstraints="NO" id="c9H-VF-dVR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9H-VF-dVR">
                                 <rect key="frame" x="16" y="72" width="113" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -411,7 +415,6 @@
                                 <rect key="frame" x="166" y="153" width="193" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Edit Profile">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -444,7 +447,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="105" height="105"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BaN-OD-ZRw">
@@ -531,16 +533,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Username" id="rS1-CQ-Iwf"/>
+=======
+                    <tabBarItem key="tabBarItem" title="" image="Account-45" id="7JT-O2-O6i"/>
+>>>>>>> 9766cfaa0e3abcde41826c2ef4677678748200af
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7r-OD-Sye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4304.8000000000002" y="1002.5487256371815"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--View Controller-->
         <scene sceneID="Tic-bn-xn7">
             <objects>
-                <viewController storyboardIdentifier="EditViewController" id="sPU-tE-O4L" customClass="EditViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sPU-tE-O4L" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="exx-HN-7HQ"/>
                         <viewControllerLayoutGuide type="bottom" id="Npe-0M-rTn"/>
@@ -554,11 +560,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="lec-Va-2hx">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vDm-yR-PQH">
-                                            <connections>
-                                                <segue destination="Lu3-Yz-uTf" kind="show" id="PoQ-2Y-rFf"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vDm-yR-PQH"/>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="8Lg-PM-tpC"/>
                                     </navigationItem>
                                 </items>
@@ -638,7 +640,7 @@
                                 <rect key="frame" x="26" y="35" width="323" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="269" id="2bl-4H-nTd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="2bl-4H-nTd">
                                         <rect key="frame" x="0.0" y="28" width="323" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bl-4H-nTd" id="Iqn-4s-cg0">
@@ -674,9 +676,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Home Icon-40" id="HTK-f5-XrN"/>
-                    <connections>
-                        <outlet property="tableview" destination="Scz-A3-VwQ" id="8y2-vg-B2F"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5Z-Sc-0gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -750,14 +749,12 @@
         <image name="Search -40" width="40" height="40"/>
         <image name="Search Icon-30" width="30" height="30"/>
         <image name="Speech Bubble-30" width="30" height="30"/>
-        <image name="account" width="64" height="64"/>
         <image name="backgroundLogin" width="851" height="315"/>
         <image name="fb" width="48" height="48"/>
         <image name="heart" width="50" height="50"/>
         <image name="logo" width="1200" height="429"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hy9-oY-9OM"/>
         <segue reference="Laf-cY-v1Q"/>
     </inferredMetricsTieBreakers>
 </document>
