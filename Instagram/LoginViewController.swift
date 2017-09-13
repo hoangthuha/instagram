@@ -108,7 +108,7 @@ class LoginViewController: UIViewController {
             }
             
             if let validUser = user {
-                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "AccountViewController") as? AccountViewController else {return}
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "UITabBarController") as? UITabBarController else {return}
                 print(validUser)
                 
                 self.present(vc, animated: true, completion: nil)
