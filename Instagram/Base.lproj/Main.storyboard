@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lu3-Yz-uTf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cMq-67-26K">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -416,6 +417,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="editButtonTapped:" destination="Lu3-Yz-uTf" eventType="touchUpInside" id="51j-wZ-3J3"/>
                                     <segue destination="sPU-tE-O4L" kind="show" id="dxX-n7-Vlk"/>
                                 </connections>
                             </button>
@@ -532,10 +534,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Username" id="rS1-CQ-Iwf"/>
+                    <connections>
+                        <outlet property="descAccount" destination="FAS-ym-NPB" id="4jr-8A-q7e"/>
+                        <outlet property="imgAccount" destination="c9H-VF-dVR" id="OxW-kf-Q21"/>
+                        <outlet property="nameAccount" destination="6hY-iY-uCy" id="74C-M9-38k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7r-OD-Sye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4304.8000000000002" y="1002.5487256371815"/>
+            <point key="canvasLocation" x="4298" y="1048"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="Tic-bn-xn7">
@@ -559,7 +566,18 @@
                                                 <segue destination="Lu3-Yz-uTf" kind="show" id="PoQ-2Y-rFf"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="8Lg-PM-tpC"/>
+                                        <rightBarButtonItems>
+                                            <barButtonItem systemItem="done" id="U1Z-wr-oeT">
+                                                <connections>
+                                                    <action selector="changeButtonTapped:" destination="sPU-tE-O4L" id="g8x-4P-FSi"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem systemItem="edit" id="uFF-Ip-80g">
+                                                <connections>
+                                                    <action selector="editButtonTapped:" destination="sPU-tE-O4L" id="JcG-q9-n26"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -581,33 +599,46 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZD-Fr-O8i">
-                                <rect key="frame" x="16" y="357" width="86" height="48"/>
+                                <rect key="frame" x="16" y="346" width="63" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWX-a5-yJS">
-                                <rect key="frame" x="16" y="428" width="86" height="48"/>
+                                <rect key="frame" x="16" y="400" width="63" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTD-UZ-noC">
-                                <rect key="frame" x="110" y="428" width="249" height="170"/>
+                                <rect key="frame" x="87" y="400" width="272" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UyX-A1-7a0">
-                                <rect key="frame" x="110" y="357" width="249" height="48"/>
+                                <rect key="frame" x="87" y="346" width="272" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwK-OV-WX6">
+                                <rect key="frame" x="123" y="569" width="129" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="sPU-tE-O4L" eventType="touchUpInside" id="ghG-PG-QAg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
@@ -617,10 +648,15 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="descEdit" destination="MTD-UZ-noC" id="651-51-YfS"/>
+                        <outlet property="imageEdit" destination="24a-mR-p4E" id="U6K-Pf-UKq"/>
+                        <outlet property="nameEdit" destination="UyX-A1-7a0" id="qfm-4C-E4d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmt-ae-8Av" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5052" y="1002.5487256371815"/>
+            <point key="canvasLocation" x="5245.6000000000004" y="1002.5487256371815"/>
         </scene>
         <!--Home-->
         <scene sceneID="1ox-HK-QDw">
@@ -754,7 +790,7 @@
         <image name="logo" width="1200" height="429"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hy9-oY-9OM"/>
         <segue reference="Laf-cY-v1Q"/>
+        <segue reference="PoQ-2Y-rFf"/>
     </inferredMetricsTieBreakers>
 </document>

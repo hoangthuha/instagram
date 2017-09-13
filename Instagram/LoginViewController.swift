@@ -39,6 +39,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //check if there is a user logged in
+        if Auth.auth().currentUser != nil {
+            guard let vc = storyboard?.instantiateViewController(withIdentifier: "NavigationController") as? UINavigationController else { return }
+            //skip loginage / go to homepage
+            present(vc, animated: true, completion: nil)
+        }
 //        
 //        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
 //        loginButton.center = view.center
@@ -102,7 +108,7 @@ class LoginViewController: UIViewController {
             }
             
             if let validUser = user {
-                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "feedViewController") as? feedViewController else {return}
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "AccountViewController") as? AccountViewController else {return}
                 print(validUser)
                 
                 self.present(vc, animated: true, completion: nil)
