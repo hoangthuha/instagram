@@ -713,7 +713,7 @@
                                         <rect key="frame" x="0.0" y="28" width="323" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bl-4H-nTd" id="Iqn-4s-cg0">
-                                            <rect key="frame" x="0.0" y="0.0" width="323" height="268.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="269"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-WH-2IG">
@@ -770,12 +770,7 @@
                         <segue destination="ld8-u0-KhI" kind="relationship" relationship="viewControllers" id="SQW-z9-COM"/>
                         <segue destination="xE3-fb-OeQ" kind="relationship" relationship="viewControllers" id="eIi-NC-EwH"/>
                         <segue destination="y0x-J5-dBT" kind="relationship" relationship="viewControllers" id="eRj-vK-7mc"/>
-<<<<<<< HEAD
-                        <segue destination="4bW-rr-6gb" kind="relationship" relationship="viewControllers" id="GCL-P0-z4t"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xc1-TV-WSv"/>
-=======
                         <segue destination="Lu3-Yz-uTf" kind="relationship" relationship="viewControllers" id="3eF-te-pem"/>
->>>>>>> hathings
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv1-zW-wkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -816,11 +811,6 @@
         <image name="logo" width="1200" height="429"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="xc1-TV-WSv"/>
-        <segue reference="Hy9-oY-9OM"/>
-=======
         <segue reference="Laf-cY-v1Q"/>
->>>>>>> hathings
     </inferredMetricsTieBreakers>
 </document>

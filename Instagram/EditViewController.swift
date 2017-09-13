@@ -4,7 +4,7 @@ import FirebaseAuth
 
 class EditViewController: UIViewController {
     
-    var users : Users = Users(userName: "", description: "", imageAccount: "")
+    
     var nameAccountPassed = ""
     var descAccountPassed = ""
     var imageAccountPassed = UIImage()
