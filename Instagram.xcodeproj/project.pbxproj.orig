@@ -18,10 +18,14 @@
 		60B50CCA1F678DCA00E94E80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60B50CC91F678DCA00E94E80 /* GoogleService-Info.plist */; };
 		60B50D021F67E17600E94E80 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B50D011F67E17600E94E80 /* AccountViewController.swift */; };
 		60B50D041F67E18D00E94E80 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B50D031F67E18D00E94E80 /* EditViewController.swift */; };
+<<<<<<< HEAD
 		D33589841F68DC77005893F3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33589831F68DC77005893F3 /* CameraViewController.swift */; };
 		FD111BD01F68CCCD008DCDE8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD111BCF1F68CCCD008DCDE8 /* Post.swift */; };
 		FD111BD41F68DEB1008DCDE8 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD111BD31F68DEB1008DCDE8 /* PostTableViewCell.swift */; };
 		FD111BD61F691A4C008DCDE8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD111BD51F691A4C008DCDE8 /* Extensions.swift */; };
+=======
+		60B50D061F68CA4400E94E80 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B50D051F68CA4400E94E80 /* Users.swift */; };
+>>>>>>> hathings
 		FD51BE8C1F67D3C400BB8BC6 /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51BE8B1F67D3C400BB8BC6 /* feedViewController.swift */; };
 /* End PBXBuildFile section */
 

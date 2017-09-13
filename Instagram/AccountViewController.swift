@@ -1,35 +1,41 @@
-//
-//  AccountViewController.swift
-//  Instagram
-//
-//  Created by Hoang Thu Ha on 12/9/17.
-//  Copyright © 2017 Hoang Thu Ha. All rights reserved.
-//
-
 import UIKit
+import FirebaseDatabase
+import FirebaseStorage
+import FirebaseAuth
 
 class AccountViewController: UIViewController {
+    
+    var users : [User] = []
+    
+    var newNameAppear = ""
+    var newDescAppear = ""
 
+    
+    @IBOutlet weak var nameAccount: UILabel!
+    @IBOutlet weak var descAccount: UITextView!
+    @IBOutlet weak var imgAccount: UIImageView!
+    
+    @IBAction func editButtonTapped(_ sender: Any) {
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+        myVC.nameAccountPassed = nameAccount.text!
+        myVC.descAccountPassed = descAccount.text!
+        myVC.imageAccountPassed = imgAccount.image!
+        navigationController?.pushViewController(myVC, animated: true)
+        present(myVC, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameAccount.text = newNameAppear
+        descAccount.text = newDescAppear
+        nameAccount.isEnabled = false
+        descAccount.isEditable = false
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+      
     }
     
+    
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
