@@ -772,10 +772,13 @@
                         <segue destination="y0x-J5-dBT" kind="relationship" relationship="viewControllers" id="eRj-vK-7mc"/>
 <<<<<<< HEAD
                         <segue destination="4bW-rr-6gb" kind="relationship" relationship="viewControllers" id="GCL-P0-z4t"/>
+<<<<<<< HEAD
+=======
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xc1-TV-WSv"/>
 =======
                         <segue destination="Lu3-Yz-uTf" kind="relationship" relationship="viewControllers" id="3eF-te-pem"/>
 >>>>>>> hathings
+>>>>>>> e2450a80bae102ab112ce198b438f02be6671e6a
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv1-zW-wkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -817,7 +820,11 @@
     </resources>
     <inferredMetricsTieBreakers>
 <<<<<<< HEAD
+        <segue reference="eOc-lZ-ohL"/>
+=======
+<<<<<<< HEAD
         <segue reference="xc1-TV-WSv"/>
+>>>>>>> e2450a80bae102ab112ce198b438f02be6671e6a
         <segue reference="Hy9-oY-9OM"/>
 =======
         <segue reference="Laf-cY-v1Q"/>

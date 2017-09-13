@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -455,7 +454,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="editButtonTapped:" destination="Lu3-Yz-uTf" eventType="touchUpInside" id="51j-wZ-3J3"/>
                                     <segue destination="sPU-tE-O4L" kind="show" id="dxX-n7-Vlk"/>
                                 </connections>
                             </button>
@@ -571,17 +569,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="y5D-Qq-Dfc"/>
                     <navigationItem key="navigationItem" title="Username" id="rS1-CQ-Iwf"/>
-                    <connections>
-                        <outlet property="descAccount" destination="FAS-ym-NPB" id="4jr-8A-q7e"/>
-                        <outlet property="imgAccount" destination="c9H-VF-dVR" id="OxW-kf-Q21"/>
-                        <outlet property="nameAccount" destination="6hY-iY-uCy" id="74C-M9-38k"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7r-OD-Sye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3220" y="1003"/>
+            <point key="canvasLocation" x="4304.8000000000002" y="1002.5487256371815"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="Tic-bn-xn7">
@@ -600,19 +592,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="lec-Va-2hx">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vDm-yR-PQH"/>
-                                        <rightBarButtonItems>
-                                            <barButtonItem systemItem="done" id="U1Z-wr-oeT">
-                                                <connections>
-                                                    <action selector="changeButtonTapped:" destination="sPU-tE-O4L" id="g8x-4P-FSi"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem systemItem="edit" id="uFF-Ip-80g">
-                                                <connections>
-                                                    <action selector="editButtonTapped:" destination="sPU-tE-O4L" id="JcG-q9-n26"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vDm-yR-PQH">
+                                            <connections>
+                                                <segue destination="Lu3-Yz-uTf" kind="show" id="PoQ-2Y-rFf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="8Lg-PM-tpC"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -634,46 +619,33 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZD-Fr-O8i">
-                                <rect key="frame" x="16" y="346" width="63" height="32"/>
+                                <rect key="frame" x="16" y="357" width="86" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWX-a5-yJS">
-                                <rect key="frame" x="16" y="400" width="63" height="29"/>
+                                <rect key="frame" x="16" y="428" width="86" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTD-UZ-noC">
-                                <rect key="frame" x="87" y="400" width="272" height="126"/>
+                                <rect key="frame" x="110" y="428" width="249" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UyX-A1-7a0">
-                                <rect key="frame" x="87" y="346" width="272" height="32"/>
+                                <rect key="frame" x="110" y="357" width="249" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwK-OV-WX6">
-                                <rect key="frame" x="123" y="569" width="129" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
-                                <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="logoutButtonTapped:" destination="sPU-tE-O4L" eventType="touchUpInside" id="ghG-PG-QAg"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
@@ -683,15 +655,10 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="descEdit" destination="MTD-UZ-noC" id="651-51-YfS"/>
-                        <outlet property="imageEdit" destination="24a-mR-p4E" id="U6K-Pf-UKq"/>
-                        <outlet property="nameEdit" destination="UyX-A1-7a0" id="qfm-4C-E4d"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmt-ae-8Av" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977" y="1003"/>
+            <point key="canvasLocation" x="5052" y="1002.5487256371815"/>
         </scene>
         <!--Home-->
         <scene sceneID="1ox-HK-QDw">
@@ -770,12 +737,8 @@
                         <segue destination="ld8-u0-KhI" kind="relationship" relationship="viewControllers" id="SQW-z9-COM"/>
                         <segue destination="xE3-fb-OeQ" kind="relationship" relationship="viewControllers" id="eIi-NC-EwH"/>
                         <segue destination="y0x-J5-dBT" kind="relationship" relationship="viewControllers" id="eRj-vK-7mc"/>
-<<<<<<< HEAD
                         <segue destination="4bW-rr-6gb" kind="relationship" relationship="viewControllers" id="GCL-P0-z4t"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xc1-TV-WSv"/>
-=======
-                        <segue destination="Lu3-Yz-uTf" kind="relationship" relationship="viewControllers" id="3eF-te-pem"/>
->>>>>>> hathings
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv1-zW-wkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -800,6 +763,25 @@
             </objects>
             <point key="canvasLocation" x="-450.39999999999998" y="138.98050974512745"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Fu-jS-9FT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4bW-rr-6gb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" selectedImage="account" id="7JT-O2-O6i"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5xx-Il-Ua0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lu3-Yz-uTf" kind="relationship" relationship="rootViewController" id="Hy9-oY-9OM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbf-HH-2mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3365.5999999999999" y="1002.5487256371815"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Account-45" width="45" height="45"/>
@@ -810,17 +792,14 @@
         <image name="Search -40" width="40" height="40"/>
         <image name="Search Icon-30" width="30" height="30"/>
         <image name="Speech Bubble-30" width="30" height="30"/>
+        <image name="account" width="64" height="64"/>
         <image name="backgroundLogin" width="851" height="315"/>
         <image name="fb" width="48" height="48"/>
         <image name="heart" width="50" height="50"/>
         <image name="logo" width="1200" height="429"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="xc1-TV-WSv"/>
         <segue reference="Hy9-oY-9OM"/>
-=======
-        <segue reference="Laf-cY-v1Q"/>
->>>>>>> hathings
     </inferredMetricsTieBreakers>
 </document>
