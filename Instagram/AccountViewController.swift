@@ -1,6 +1,6 @@
 import UIKit
 import FirebaseDatabase
-import Firebase
+import FirebaseStorage
 import FirebaseAuth
 
 class AccountViewController: UIViewController {
@@ -25,11 +25,6 @@ class AccountViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let username = authData.providerData["name"]
-        
-        
-        
         nameAccount.text = newNameAppear
         descAccount.text = newDescAppear
         nameAccount.isEnabled = false
