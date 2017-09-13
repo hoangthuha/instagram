@@ -675,7 +675,7 @@
                                 <rect key="frame" x="26" y="35" width="323" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="269" id="2bl-4H-nTd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="269" id="2bl-4H-nTd" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="323" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bl-4H-nTd" id="Iqn-4s-cg0">
@@ -698,6 +698,9 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImageView" destination="iFa-WH-2IG" id="Gp0-HJ-kKn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -712,7 +715,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Home Icon-40" id="HTK-f5-XrN"/>
                     <connections>
-                        <outlet property="tableview" destination="Scz-A3-VwQ" id="8y2-vg-B2F"/>
+                        <outlet property="tableView" destination="Scz-A3-VwQ" id="KG4-62-CUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5Z-Sc-0gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -722,7 +725,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="KL4-k5-wNC">
             <objects>
-                <tabBarController id="0wM-qb-T9B" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UITabBarController" id="0wM-qb-T9B" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="LQb-8Y-zWY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

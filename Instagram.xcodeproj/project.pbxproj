@@ -19,6 +19,9 @@
 		60B50D021F67E17600E94E80 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B50D011F67E17600E94E80 /* AccountViewController.swift */; };
 		60B50D041F67E18D00E94E80 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B50D031F67E18D00E94E80 /* EditViewController.swift */; };
 		D33589841F68DC77005893F3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33589831F68DC77005893F3 /* CameraViewController.swift */; };
+		FD111BD01F68CCCD008DCDE8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD111BCF1F68CCCD008DCDE8 /* Post.swift */; };
+		FD111BD41F68DEB1008DCDE8 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD111BD31F68DEB1008DCDE8 /* PostTableViewCell.swift */; };
+		FD111BD61F691A4C008DCDE8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD111BD51F691A4C008DCDE8 /* Extensions.swift */; };
 		FD51BE8C1F67D3C400BB8BC6 /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51BE8B1F67D3C400BB8BC6 /* feedViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		60B50D031F67E18D00E94E80 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		CE6A68F3D23427E5C24E3073 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		D33589831F68DC77005893F3 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FD111BCF1F68CCCD008DCDE8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../Post.swift; sourceTree = "<group>"; };
+		FD111BD31F68DEB1008DCDE8 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FD111BD51F691A4C008DCDE8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FD51BE8B1F67D3C400BB8BC6 /* feedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +84,11 @@
 				604387E91F667B7700CB765A /* AppDelegate.swift */,
 				604387EB1F667B7700CB765A /* ViewController.swift */,
 				FD51BE8B1F67D3C400BB8BC6 /* feedViewController.swift */,
+				FD111BD51F691A4C008DCDE8 /* Extensions.swift */,
+				FD111BD31F68DEB1008DCDE8 /* PostTableViewCell.swift */,
 				604387ED1F667B7700CB765A /* Main.storyboard */,
 				D33589831F68DC77005893F3 /* CameraViewController.swift */,
+				FD111BCF1F68CCCD008DCDE8 /* Post.swift */,
 				60B50D011F67E17600E94E80 /* AccountViewController.swift */,
 				60B50D031F67E18D00E94E80 /* EditViewController.swift */,
 				605397791F6777B900B2444C /* LoginViewController.swift */,
@@ -262,11 +271,14 @@
 				FD51BE8C1F67D3C400BB8BC6 /* feedViewController.swift in Sources */,
 				6053977A1F6777B900B2444C /* LoginViewController.swift in Sources */,
 				60B50D021F67E17600E94E80 /* AccountViewController.swift in Sources */,
+				FD111BD01F68CCCD008DCDE8 /* Post.swift in Sources */,
 				604387EC1F667B7700CB765A /* ViewController.swift in Sources */,
+				FD111BD61F691A4C008DCDE8 /* Extensions.swift in Sources */,
 				6053977C1F6777C900B2444C /* SignupViewController.swift in Sources */,
 				D33589841F68DC77005893F3 /* CameraViewController.swift in Sources */,
 				604387EA1F667B7700CB765A /* AppDelegate.swift in Sources */,
 				60B50D041F67E18D00E94E80 /* EditViewController.swift in Sources */,
+				FD111BD41F68DEB1008DCDE8 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
