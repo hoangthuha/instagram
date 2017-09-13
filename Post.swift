@@ -10,16 +10,14 @@ import Foundation
 import UIKit
 
 class Post {
-    var name : String = "No Name"
-    var details : String = ""
+
     var image : UIImage = UIImage(named: "unknown") ?? UIImage()
     
     
     init() {}
     
-    init(name: String, detail : String, imageName : String) {
-        self.name = name
-        self.details = detail
+    init(imageName : String) {
+
         if let userImage = UIImage(named: imageName){
             self.image = userImage
             
