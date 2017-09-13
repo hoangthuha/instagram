@@ -11,19 +11,30 @@ import UIKit
 
 class Post {
 
-    var image : UIImage = UIImage(named: "unknown") ?? UIImage()
+    
+    
+    var userid : String = ""
+    
+    var imageurl : String = ""
+    
+    
+//        : UIImage = UIImage(named: "unknown") ?? UIImage()
     
     
     init() {}
     
-    init(imageName : String) {
+    init(anID: String, imageName : String) {
 
-        if let userImage = UIImage(named: imageName){
-            self.image = userImage
-            
-        }else{
-            self.image = UIImage()
-        }
+        
+        userid = anID
+        imageurl = imageName
+        
+//        if let userImage = UIImage(named: imageName){
+//            self.imageurl = userImage
+//            
+//        }else{
+//            self.imageurl = UIImage()
+//        }
         
     }
 }

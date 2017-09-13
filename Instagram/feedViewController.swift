@@ -32,31 +32,57 @@ class feedViewController: UIViewController, UITableViewDelegate{
 //        storageRef = Storage.storage().reference()
         
         
-        let userimages = Post()
-        if let userImage = UIImage(named: "imgetest"){
-            userimages.image = userImage
-            
-        }
-        posts.append(userimages)
+//        let userimages = Post()
+//        if let userImage = UIImage(named: "imgetest") {
+//        userimages.imageurl = userImage
+//            
+//        }
+//        posts.append(userimages)
         
         
         tableView.dataSource = self
         
 //        tableView.delegate = self
         
+        
+        fetchpost()
+        
         tableView.reloadData()
 
 
 
 }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func fetchpost(){
         
+        databaseRef = Database.database().reference()
         
+        databaseRef.child("posts").observe(.childAdded, with: { (snapshot) in
+            
+            guard let mypost = snapshot.value as? [String: Any]
+                else {return}
+            
+            
+            
+        if let imageurl = mypost["imageurl"] as? String,
+            let userid = mypost["userid"] as? String {
+
+                
+//            let newPost = mypost(imageName: post)
+                
+                
+                
+            let newPost = Post(anID: userid, imageName: imageurl)
+            
+            self.posts.append(newPost)
+            self.tableView.reloadData()
+            
+        }
+            
+        })
 
 }
-
 }
+    
 extension feedViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -73,7 +99,7 @@ extension feedViewController : UITableViewDataSource {
         let post = posts[indexPath.row]
         
         
-        cell.postImageView.image = post.image
+        cell.postImageView.loadImage(from: post.imageurl)
         
         
         //return cell
