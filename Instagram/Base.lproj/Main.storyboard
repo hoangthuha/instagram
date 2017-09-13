@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cMq-67-26K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -369,25 +369,6 @@
             </objects>
             <point key="canvasLocation" x="1568.8" y="1002.5487256371815"/>
         </scene>
-        <!--Like-->
-        <scene sceneID="H0q-2z-eIO">
-            <objects>
-                <viewController title="Like" id="y0x-J5-dBT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YvF-Tl-aZa"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ode-2E-7FR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hFS-eE-1av">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="Heart Filled-40" selectedImage="heart" id="N1X-xa-Wci"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nOt-ib-mv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2513" y="1003"/>
-        </scene>
         <!--Account-->
         <scene sceneID="hnI-dt-zfI">
             <objects>
@@ -581,7 +562,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7r-OD-Sye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3220" y="1003"/>
+            <point key="canvasLocation" x="2596" y="1003"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="Tic-bn-xn7">
@@ -600,7 +581,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="lec-Va-2hx">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vDm-yR-PQH"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vDm-yR-PQH">
+                                            <connections>
+                                                <segue destination="Lu3-Yz-uTf" kind="show" id="AQ4-Lv-pL8"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <rightBarButtonItems>
                                             <barButtonItem systemItem="done" id="U1Z-wr-oeT">
                                                 <connections>
@@ -691,7 +676,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmt-ae-8Av" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977" y="1003"/>
+            <point key="canvasLocation" x="3366" y="1003"/>
         </scene>
         <!--Home-->
         <scene sceneID="1ox-HK-QDw">
@@ -769,7 +754,6 @@
                         <segue destination="FB3-AW-n2O" kind="relationship" relationship="viewControllers" id="zP8-JJ-sxw"/>
                         <segue destination="ld8-u0-KhI" kind="relationship" relationship="viewControllers" id="SQW-z9-COM"/>
                         <segue destination="xE3-fb-OeQ" kind="relationship" relationship="viewControllers" id="eIi-NC-EwH"/>
-                        <segue destination="y0x-J5-dBT" kind="relationship" relationship="viewControllers" id="eRj-vK-7mc"/>
                         <segue destination="Lu3-Yz-uTf" kind="relationship" relationship="viewControllers" id="3eF-te-pem"/>
                     </connections>
                 </tabBarController>
@@ -793,24 +777,23 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOU-sT-rXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-450.39999999999998" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-450" y="162"/>
         </scene>
     </scenes>
     <resources>
         <image name="Account-45" width="45" height="45"/>
         <image name="Add New-40" width="40" height="40"/>
         <image name="Heart Filled-30" width="30" height="30"/>
-        <image name="Heart Filled-40" width="40" height="40"/>
         <image name="Home Icon-40" width="40" height="40"/>
         <image name="Search -40" width="40" height="40"/>
         <image name="Search Icon-30" width="30" height="30"/>
         <image name="Speech Bubble-30" width="30" height="30"/>
         <image name="backgroundLogin" width="851" height="315"/>
         <image name="fb" width="48" height="48"/>
-        <image name="heart" width="50" height="50"/>
         <image name="logo" width="1200" height="429"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Laf-cY-v1Q"/>
+        <segue reference="eOc-lZ-ohL"/>
+        <segue reference="AQ4-Lv-pL8"/>
     </inferredMetricsTieBreakers>
 </document>
