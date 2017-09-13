@@ -8,14 +8,34 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
 
-class feedViewController: UIViewController {
+
+class feedViewController: UIViewController{
+
+
+        @IBOutlet weak var tableView: UITableView!
+    
+    
+    var posts = [Post]()
+    var databaseRef: DatabaseReference!
+    var storageRef: StorageReference!
+    
+    
+    
       override func viewDidLoad() {
         super.viewDidLoad()
+        
+        FirebaseApp.configure()
+        databaseRef = Database.database().reference()
+        storageRef = Storage.storage().reference()
+
 
 }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
+        
 
 }
 

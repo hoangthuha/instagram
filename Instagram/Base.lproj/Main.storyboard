@@ -674,6 +674,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Home Icon-40" id="HTK-f5-XrN"/>
+                    <connections>
+                        <outlet property="tableView" destination="Scz-A3-VwQ" id="KG4-62-CUz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5Z-Sc-0gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,7 +685,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="KL4-k5-wNC">
             <objects>
-                <tabBarController id="0wM-qb-T9B" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UITabBarController" id="0wM-qb-T9B" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="LQb-8Y-zWY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
