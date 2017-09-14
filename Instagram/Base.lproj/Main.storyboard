@@ -552,8 +552,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="y5D-Qq-Dfc"/>
+                    <tabBarItem key="tabBarItem" title="" image="Account-45" id="2RW-qM-Lu9"/>
                     <navigationItem key="navigationItem" title="Username" id="rS1-CQ-Iwf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descAccount" destination="FAS-ym-NPB" id="4jr-8A-q7e"/>
                         <outlet property="imgAccount" destination="c9H-VF-dVR" id="OxW-kf-Q21"/>
@@ -698,7 +699,7 @@
                                         <rect key="frame" x="0.0" y="28" width="323" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bl-4H-nTd" id="Iqn-4s-cg0">
-                                            <rect key="frame" x="0.0" y="0.0" width="323" height="269"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="268.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-WH-2IG">
